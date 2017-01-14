@@ -88,3 +88,6 @@ ve/
 
 # Rope project settings
 .ropeproject
+
+# Pycharm
+.idea/
