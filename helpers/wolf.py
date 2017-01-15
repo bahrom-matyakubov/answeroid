@@ -14,4 +14,7 @@ class Wolf:
             results = [(sub['plaintext'], sub['img']['@src']) for pod in wolf_results.pods for sub in pod.subpods]
         except AttributeError:
             results = []
-        return utils.SUCCESS_TEMPLATE % ('\n'.join(['{}\n[img]{}[/img]'.format(str(text), str(img)) for (text, img) in results])) if results else utils.FAILURE_TEMPLATE % wolf_query
+        template = utils.TEMPLATES['WOLF']
+        return template['SUCCESS'] % (
+            wolf_query, '\n'.join(['{}\n[img]{}[/img]'.format(str(text), str(img)) for (text, img) in results]), wolf_query
+        ) if results else template['FAILURE'] % wolf_query

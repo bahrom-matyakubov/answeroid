@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
+import sympy
+from sympy.core.sympify import SympifyError
 import urllib
 from helpers import utils
 
@@ -13,4 +15,17 @@ class Gcal:
             result = BeautifulSoup(resp.content, 'html.parser').find('h2', {'class': 'r'}).next_element
         except AttributeError:
             result = None
-        return utils.SUCCESS_TEMPLATE % result if result else utils.FAILURE_TEMPLATE % _query
+        template = utils.TEMPLATES['GCAL']
+        return template['SUCCESS'] % (
+            _query, self._texify_result(result), result
+        ) if result else template['FAILURE'] % _query
+
+    def _texify_result(self, result):
+        lhs, rhs = result.split('=')
+        try:
+            lhs = '\[%s' % sympy.latex(sympy.sympify(lhs, evaluate=False))
+            rhs = '%s\]' % sympy.latex(sympy.sympify(rhs, evaluate=False))
+        except SympifyError:
+            pass
+            # logging.warn('Unable to convert to latex %s' % result)  #FIXME Add this
+        return '%s = %s' % (lhs, rhs)

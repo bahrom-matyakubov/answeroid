@@ -3,7 +3,9 @@ bs4==0.0.1
 inflect==0.2.5
 jaraco.itertools==2.0
 more-itertools==2.5.0
+mpmath==0.19
 requests==2.12.4
 six==1.10.0
+sympy==1.0
 wolframalpha==3.0
 xmltodict==0.10.2
