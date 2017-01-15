@@ -12,6 +12,7 @@ env/
 build/
 develop-eggs/
 dist/
+MANIFEST
 downloads/
 eggs/
 .eggs/
@@ -91,3 +92,6 @@ ve/
 
 # Pycharm
 .idea/
+
+#Other
+sites/pa.py
