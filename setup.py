@@ -8,7 +8,7 @@ from distutils.core import setup
 setup(
     name='answeroid',
     packages=['answeroid', 'helpers', 'sites'],
-    version='0.7',
+    version='0.8',
     description='A simple bot for helping on Q/A sites',
     author='Bahrom Matyakubov',
     author_email='bahrom.matyakubov@gmail.com',
