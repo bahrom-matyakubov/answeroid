@@ -16,5 +16,10 @@ TEMPLATES = {
                    '\[\color{green}{\\textbf{Computed:}}\]%s' \
                    '\[\\textbf{Plaintext:}\]%s',
         'FAILURE': '\[\color{red}{\\textbf{Unable to compute:}}\]%s'
-    }
+    },
+    'BING': {
+        'SUCCESS': '\[\color{blue}{\\textbf{Expression:}}\]%s' \
+                   '\[\\textbf{Plaintext:}\]%s',
+        'FAILURE': '\[\color{red}{\\textbf{Unable to compute:}}\]%s'
+    },
 }
