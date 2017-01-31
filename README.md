@@ -36,7 +36,7 @@ export WOLF_APP_ID='XXXXXX-XXXXXXXXX'
 
 <details>
 <summary>
-3) <a name="3">Using ***answeroid***</a>
+3) <a name="3">Using ***answeroid***:</a>
 </summary>
   > *(If you are planning on contributing to the project, please skip to [Step 4](#4))*
 
@@ -69,7 +69,7 @@ pip install answeroid
 
 <details>
 <summary>
-4) <a name="4">Contributing to ***answeroid***</a>
+4) <a name="4">Contributing to ***answeroid***:</a>
 </summary>
   > If you are going to contribute to ***answeroid***, instead of downloading it from pip, you will have to [fork this repository](https://help.github.com/articles/fork-a-repo/). Once you have forked the repo and cloned your fork, install the dependencies:
 
@@ -81,7 +81,7 @@ pip install answeroid
 
 <details>
 <summary>
-5) <a name="5"></a>Run the bot:
+5) <a name="5">Running the bot:</a>
 </summary>
   > *(I'm working on incorporating this bot into a Slack team chat, so a more concrete site example should be available soon)*
 
