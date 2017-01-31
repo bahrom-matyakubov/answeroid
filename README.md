@@ -36,8 +36,9 @@ export WOLF_APP_ID='XXXXXX-XXXXXXXXX'
 
 <details>
 <summary>
-3) <a name="3">Install the required dependencies</a> (*if you are planning on contributing to the project, please skip to [Step 4](#4)*):
+3) <a name="3">Using ***answeroid***</a>
 </summary>
+  > *(If you are planning on contributing to the project, please skip to [Step 4](#4))*
 
   > 1. Create a folder for your project:
 
@@ -70,7 +71,7 @@ pip install answeroid
 <summary>
 4) <a name="4">Contributing to ***answeroid***</a>
 </summary>
-If you are going to contribute to ***answeroid***, instead of downloading it from pip, you will have to [fork this repository](https://help.github.com/articles/fork-a-repo/). Once you have forked the repo and cloned your fork, install the dependencies:
+  > If you are going to contribute to ***answeroid***, instead of downloading it from pip, you will have to [fork this repository](https://help.github.com/articles/fork-a-repo/). Once you have forked the repo and cloned your fork, install the dependencies:
 
   > 1. Follow the steps [3-2](#3-2) and [3-3](#3-3) above
   > 2. With the virtual environment active, install all the required dependencies: `pip install -r requirements.txt`. This will download all the dependencies needed to run answeroid.
