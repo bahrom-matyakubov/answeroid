@@ -84,10 +84,14 @@ If you are going to contribute to ***answeroid***, instead of downloading it fro
 </summary>
 *(I'm working on incorporating this bot into a Slack team chat, so a more concrete site example should be available soon)*
 
-1. Create a subclass of `Site`.
-    * The idea is that, when deployed, the bot monitors your activity on said `Site` by periodically calling [`get_viewing_question`](https://github.com/bahrom-matyakubov/answeroid/blob/68b0df82dbdd5322a2d92c4e329a3a28a639e98c/sites/common.py#L30) and scanning your replies on that question. When it finds relevant replies (i.e. `WOLF: query`, `BING: query`, or `GCAL: query`), it sends the `query` to the corresponding provider, and edits your reply with the results from the given provider
-2. Update the import statement in [main](answeroid/answeroid/main.py). Instead of importing `Site` from `sites.common` import your subclass from the module where it is located and update the [`with` clause](https://github.com/bahrom-matyakubov/answeroid/blob/68b0df82dbdd5322a2d92c4e329a3a28a639e98c/answeroid/main.py#L16) accordingly.
-3. With the virtual environment still active, run [main](answeroid/answeroid/main.py): `(ve) _____ $ python answeroid/main.py` (assuming you're in the root directory of the project)
+1. Create a subclass of [`Site`](./sites/common.py#L4).
+    * The idea is that, when deployed, the bot monitors your activity on said `Site` by periodically calling [`get_viewing_question`](/sites/common.py#L30) and scanning your replies on that question. When it finds relevant replies (i.e. `WOLF: query`, `BING: query`, or `GCAL: query`), it sends the `query` to the corresponding provider, and edits your reply with the results from the given provider
+2. Update the import statement in [main](./answeroid/main.py). Instead of importing `Site` from `sites.common`, import your subclass from the module where it is located and update the `with` clause in [main](./answeroid/main.py) accordingly.
+3. With the virtual environment still active, run [main](./answeroid/main.py) (assuming you're in the root directory of the project):
+
+    ```Shell
+(ve) _____ $ python answeroid/main.py
+    ```
 </details>
 
 ## Deployment instructions ([raspbian](https://www.raspberrypi.org/downloads/raspbian/)):
