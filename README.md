@@ -1,7 +1,27 @@
 # answeroid
 
-A simple bot for helping on Q/A sites.
-
+A simple bot for helping on Q&A sites.
+<details>
+<summary>**Demos**</summary>
+  > <details>
+<summary>
+GCAL
+</summary>
+  > ![GCAL](./docs/GCAL-demo.gif "GCAL demo")
+</details>
+<details>
+<summary>
+WOLF
+</summary>
+  > ![WOLF](./docs/WOLF-demo.gif "WOLF demo")
+</details>
+<details>
+<summary>
+BING
+</summary>
+  > ![BING](./docs/BING-demo.gif "BING demo")
+</details>
+</details>
 
 ## Setup instructions (linux):
 <details>
