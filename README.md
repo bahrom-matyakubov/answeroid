@@ -111,7 +111,7 @@ pip install answeroid
   > 3. With the virtual environment still active, run [main](./answeroid/main.py) (assuming you're in the root directory of the project):
 
   >    ```Shell
-(ve) _____ $ python answeroid/main.py
+(ve)user@pc:~/MyProjects/answeroid$ python answeroid/main.py
     ```
 </details>
 
