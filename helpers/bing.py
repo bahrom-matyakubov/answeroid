@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup
 import requests
 from helpers import utils
 
-REPLY_TEMPLATE = '''Bing says: %s'''
-EXCLUDED_SUBEXPRESSIONS = ["Text under", "\u2026"]
-EXCLUDED_EXPRESSIONS = ["\u00B7", ""]  
+EXCLUDED_SUBEXPRESSIONS = ['Text under', '\u2026']
+EXCLUDED_EXPRESSIONS = ['\u00B7', '', 'CC-BY-SA license']
 
 class Bing:
     @staticmethod
